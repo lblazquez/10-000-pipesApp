@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* los estilos con var(xxxxx) lo que hacen es sustituir por el valor de la variable
+    global que se ha definido en el css del theme que estamos usando (ver sección styles dentro del  angular.json)
+*/
+
+html, body {
+    margin: 10px;
+    background-color: var(--surface-b);
+    font-family: var( --font-family);
+}
+
+.text-layout {
+    color: var(--text-color);
+}
