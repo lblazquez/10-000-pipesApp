@@ -40,3 +40,17 @@ instalar PrimeFlex
     > npm install primeflex
 
 y actualizar el angular.json para incluir el estilo 
+
+## 10-145 Cambiar la aplicación a locale español
+solo hay que modificar el app.module.ts
+
+    import localeEs from "@angular/common/locales/es";
+    import { registerLocaleData } from "@angular/common";
+
+    registerLocaleData(localeEs);
+    ...
+      providers: [
+            {provide : LOCALE_ID, useValue: 'es'}
+        ],
+
+
