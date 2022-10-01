@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# Notas de Curso
+##  10-135 a 138
+hay que instalar primeng ... para ello ir a la web https://www.primefaces.org/primeng/ y ver como instalar.
+
+    > npm install primeng primeicons 
+
+luego hemos modificado el fichero angular.json para incluir los estilos del tema que vamos a usar
+
+## 10-142 PrimeFlex
+instalar PrimeFlex
+
+    > npm install primeflex
+
+y actualizar el angular.json para incluir el estilo 
