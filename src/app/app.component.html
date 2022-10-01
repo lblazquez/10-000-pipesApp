@@ -1,21 +1,4 @@
 
-<div class="text-layout">
-  <h1> {{ nombre |  titlecase }} </h1>
-  <h1> {{ valor |  number }} </h1>
-  
-  <button 
-      pButton 
-      (click)="mostrarNombre()" 
-      label="Cambiar nombre"
-      icon="pi pi-bell" 
-      iconPos="right"
-      class="p-button-help"
-      >
-  </button>
+<app-menu></app-menu>
 
-  <!-- <p-card header="{{nombre | titlecase}}" subheader="Este es el subheader"> -->
-  <p-card [header]="nombre | titlecase" subheader="Este es el subheader">
-      Lorem fistrum pecador la caidita torpedo ahorarr ahorarr te voy a borrar el cerito qué dise usteer. Pecador diodeno quietooor no puedor jarl tiene musho peligro amatomaa. Quietooor hasta luego Lucas por la gloria de mi madre apetecan la caidita la caidita hasta luego Lucas se calle ustée sexuarl.
-  </p-card>
-
-</div>
+<router-outlet></router-outlet>
