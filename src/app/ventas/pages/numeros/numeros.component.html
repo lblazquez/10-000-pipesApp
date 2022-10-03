@@ -1,1 +1,54 @@
-<p>numeros works!</p>
+<div class="text-layout">
+    <h1>Decimal Pipe y Porcentaje</h1>
+    <p>
+        Pipes incluidos en Angular - Usualmente en el Common Module
+    </p>
+</div>
+
+<div class="grid">
+
+    <div class="col-4">
+        <p-card header="number"
+                subheader=" ">
+            <dl>
+                <dt> {{ cantidad }} | number </dt>
+                <dd>{{ cantidad | number }}</dd>
+                <dt> {{ cantidad }} | number:'6.3-3' </dt>
+                <dd>{{ cantidad | number:'6.3-3' }}</dd>
+                <dt> {{ cantidad }} | number:'1.1-1' </dt>
+                <dd>{{ cantidad | number:'1.1-1' }}</dd>
+            </dl>
+        </p-card>
+    </div>
+
+    <div class="col-4">
+        <p-card header="currency"
+                subheader=" ">
+            <dl>
+                <dt>{{ cantidad }} | currency </dt>
+                <dd>{{ cantidad | currency }}</dd>
+                <dt>{{ cantidad }}| currency:'USD' </dt>
+                <dd>{{ cantidad | currency:'USD' }}</dd>
+                <dt>{{ cantidad }}| currency:'USD':'symbol-narrow' </dt>
+                <dd>{{ cantidad | currency:'USD':'symbol-narrow' }}</dd>
+                <dt>{{ cantidad }}| currency:'USD':'symbol-narrow':'6.3-3' </dt>
+                <dd>{{ cantidad | currency:'USD':'symbol-narrow':'6.3-3' }}</dd>
+            </dl>
+        </p-card>
+    </div>
+
+    <div class="col-4">
+        <p-card header="porcentaje"
+                subheader=" ">
+            <dl>
+                <dt> {{ porcentaje }} | percent </dt>
+                <dd>{{ porcentaje | percent }}</dd>
+                <dt> {{ porcentaje }} | percent:'1.2-3' </dt>
+                <dd>{{ porcentaje | percent:'1.2-3' }}</dd>
+            </dl>
+        </p-card>
+    </div>
+
+</div>
+
+
