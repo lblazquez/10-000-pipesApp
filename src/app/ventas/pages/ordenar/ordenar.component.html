@@ -1,1 +1,16 @@
-<p>ordenar works!</p>
+<div class="text-layout">
+    <h1>Pipes personalizados</h1>
+    <p>Pipes creados por "NoSoTrOs" | mayusculas </p>
+    <p>{{'NoSoTrOs' | mayusculas}}</p>
+    <p>Pipes creados por "NoSoTrOs" | mayusculas:false </p>
+    <p>{{'NoSoTrOs' | mayusculas:false}}</p>
+
+    <p>{{'Cambiando el texto con el botón' | mayusculas: aMayusculas }}</p>
+    <button pButton 
+            label="Cambiar Mayúsculas/Minúsculas"
+            (click)="cambiaCaps()">
+    </button>
+
+</div>
+
+
